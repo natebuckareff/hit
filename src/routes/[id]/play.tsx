@@ -12,7 +12,13 @@ import {
 import { createStore } from 'solid-js/store';
 import { Layout } from '~/components/Layout';
 import { Time } from '~/components/Time';
-import { getTotalDuration, loadRoutines, renderTime, Routine } from '~/util';
+import {
+  asset,
+  getTotalDuration,
+  loadRoutines,
+  renderTime,
+  Routine,
+} from '~/util';
 
 interface PlayState {
   playing: boolean;
@@ -159,8 +165,8 @@ export default function PlayRoutine() {
 
   return (
     <>
-      <audio ref={shortBeep!} src="public/short.mp3" />
-      <audio ref={longBeep!} src="public/long.mp3" />
+      <audio ref={shortBeep!} src={asset('short.mp3')} />
+      <audio ref={longBeep!} src={asset('long.mp3')} />
 
       <Layout>
         <Switch>

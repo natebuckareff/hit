@@ -35,3 +35,7 @@ export function loadRoutines() {
 export function storeRoutines(routines: Routine[]) {
   localStorage.setItem('hit:routines', JSON.stringify(routines));
 }
+
+export function asset(file: string) {
+  return `${import.meta.env.SERVER_BASE_URL}${file}`;
+}
