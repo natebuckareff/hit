@@ -1,0 +1,73 @@
+{
+  "_Time-CAaGlv3w.js": {
+    "file": "assets/Time-CAaGlv3w.js",
+    "name": "Time",
+    "imports": [
+      "_routing-B-zMlmLc.js"
+    ]
+  },
+  "_index.browser-BDR-4IvR.js": {
+    "file": "assets/index.browser-BDR-4IvR.js",
+    "name": "index.browser",
+    "imports": [
+      "_routing-B-zMlmLc.js",
+      "_Time-CAaGlv3w.js"
+    ]
+  },
+  "_routing-B-zMlmLc.js": {
+    "file": "assets/routing-B-zMlmLc.js",
+    "name": "routing"
+  },
+  "src/routes/(routines).tsx?pick=default&pick=$css": {
+    "file": "assets/(routines)-DiYBPMF8.js",
+    "name": "(routines)",
+    "src": "src/routes/(routines).tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-B-zMlmLc.js",
+      "_Time-CAaGlv3w.js",
+      "_index.browser-BDR-4IvR.js"
+    ]
+  },
+  "src/routes/[id]/edit.tsx?pick=default&pick=$css": {
+    "file": "assets/edit-BkWoiuqR.js",
+    "name": "edit",
+    "src": "src/routes/[id]/edit.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-B-zMlmLc.js",
+      "_Time-CAaGlv3w.js",
+      "_index.browser-BDR-4IvR.js"
+    ]
+  },
+  "src/routes/[id]/play.tsx?pick=default&pick=$css": {
+    "file": "assets/play-CsyBgUCA.js",
+    "name": "play",
+    "src": "src/routes/[id]/play.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_routing-B-zMlmLc.js",
+      "_Time-CAaGlv3w.js"
+    ]
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-OaiqxKQ3.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_routing-B-zMlmLc.js"
+    ],
+    "dynamicImports": [
+      "src/routes/(routines).tsx?pick=default&pick=$css",
+      "src/routes/[id]/edit.tsx?pick=default&pick=$css",
+      "src/routes/[id]/play.tsx?pick=default&pick=$css"
+    ],
+    "css": [
+      "assets/client-1oLm3Cfh.css"
+    ]
+  }
+}
