@@ -21,6 +21,9 @@ interface PlayState {
 }
 
 export default function PlayRoutine() {
+  let shortBeep: HTMLAudioElement;
+  let longBeep: HTMLAudioElement;
+
   const params = useParams<{ id: string }>();
   const [loading, setLoading] = createSignal(true);
   const [routines, setRoutines] = createStore<Routine[]>([]);
@@ -60,6 +63,12 @@ export default function PlayRoutine() {
 
     if (state.time >= item.duration - 5 && state.time < item.duration) {
       setFlash(1.0);
+
+      if (state.time === item.duration - 1) {
+        longBeep!.play();
+      } else {
+        shortBeep!.play();
+      }
     }
 
     if (state.time >= item.duration) {
@@ -150,6 +159,9 @@ export default function PlayRoutine() {
 
   return (
     <>
+      <audio ref={shortBeep!} src="public/short.mp3" />
+      <audio ref={longBeep!} src="public/long.mp3" />
+
       <Layout>
         <Switch>
           <Match when={loading()}>
