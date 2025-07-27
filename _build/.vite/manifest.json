@@ -43,7 +43,7 @@
     ]
   },
   "src/routes/[id]/play.tsx?pick=default&pick=$css": {
-    "file": "assets/play-DcTVDiGy.js",
+    "file": "assets/play-CRDOIGB3.js",
     "name": "play",
     "src": "src/routes/[id]/play.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -54,7 +54,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-DIxXmmJN.js",
+    "file": "assets/client-DX5BRuHz.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
