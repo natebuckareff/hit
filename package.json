@@ -1,5 +1,6 @@
 {
-  "name": "example-bare",
+  "name": "hit",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
