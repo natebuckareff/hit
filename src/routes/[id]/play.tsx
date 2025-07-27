@@ -217,7 +217,7 @@ export default function PlayRoutine() {
               >
                 <div class="flex h-full flex-row items-center justify-between bg-blue-100 px-4 text-4xl font-bold text-blue-950">
                   <div>{routine()?.name ?? ''}</div>
-                  <Time {...renderTime(totalTime())} />
+                  <Time {...renderTime(totalDuration() - totalTime())} />
                 </div>
               </Progress>
 
@@ -233,20 +233,25 @@ export default function PlayRoutine() {
                       >
                         <div class="flex h-full flex-row items-center justify-between bg-green-100 px-4 text-4xl font-bold text-green-950 opacity-60">
                           <div>{currentItem()?.name ?? ''}</div>
-                          <Time {...renderTime(state.time)} />
+                          <Time
+                            {...renderTime(
+                              (currentItem()?.duration ?? 0) - state.time,
+                            )}
+                          />
                         </div>
                       </Progress>
                     </Match>
+
                     <Match when={index() !== state.itemIndex}>
                       <Progress
-                        class="border-3 border-dashed border-gray-300"
+                        class="border-3 border-dashed border-gray-300 opacity-50"
                         color2="bg-gray-400"
                         time={0}
                         duration={item.duration}
                       >
                         <div class="flex h-full flex-row items-center justify-between bg-gray-100 px-4 text-4xl font-bold text-gray-950 opacity-60">
                           <div>{item.name ?? ''}</div>
-                          <Time {...renderTime(0)} />
+                          <Time {...renderTime(item.duration)} />
                         </div>
                       </Progress>
                     </Match>
