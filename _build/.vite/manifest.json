@@ -31,7 +31,7 @@
     ]
   },
   "src/routes/[id]/edit.tsx?pick=default&pick=$css": {
-    "file": "assets/edit-DEgjUlbu.js",
+    "file": "assets/edit-BY0N9mlp.js",
     "name": "edit",
     "src": "src/routes/[id]/edit.tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -54,7 +54,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-CYs3f4OA.js",
+    "file": "assets/client-VJ6jb2Vi.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
