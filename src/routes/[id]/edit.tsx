@@ -14,6 +14,8 @@ import { DndList } from '~/components/DndList';
 import { nanoid } from 'nanoid';
 import { Time } from '~/components/Time';
 
+const MAX_DURATION = 5999;
+
 export default function EditRoutine() {
   const params = useParams<{ id: string }>();
   const [loading, setLoading] = createSignal(true);
@@ -181,12 +183,14 @@ function HitItem(props: {
         autocomplete="off"
         value={props.duration}
         onInput={e => {
-          const n = Math.max(1, Number(e.target.value));
+          const n = Math.min(Math.max(1, Number(e.target.value)), MAX_DURATION);
           const s = n.toString();
           e.target.value = s;
           props.onDurationChange?.(n);
         }}
       />
+
+      <Time {...renderTime(props.duration)} />
 
       <div class="flex flex-row items-center gap-2">
         <input
