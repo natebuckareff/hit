@@ -1,65 +1,65 @@
 {
-  "_Time-L_30tfk-.js": {
-    "file": "assets/Time-L_30tfk-.js",
+  "_Time-Cvku3uHE.js": {
+    "file": "assets/Time-Cvku3uHE.js",
     "name": "Time",
     "imports": [
-      "_routing-B-zMlmLc.js"
+      "_routing-DUaLRc8k.js"
     ]
   },
-  "_index.browser-DRoZXl1w.js": {
-    "file": "assets/index.browser-DRoZXl1w.js",
+  "_index.browser-Cei-BBeL.js": {
+    "file": "assets/index.browser-Cei-BBeL.js",
     "name": "index.browser",
     "imports": [
-      "_routing-B-zMlmLc.js",
-      "_Time-L_30tfk-.js"
+      "_routing-DUaLRc8k.js",
+      "_Time-Cvku3uHE.js"
     ]
   },
-  "_routing-B-zMlmLc.js": {
-    "file": "assets/routing-B-zMlmLc.js",
+  "_routing-DUaLRc8k.js": {
+    "file": "assets/routing-DUaLRc8k.js",
     "name": "routing"
   },
   "src/routes/(routines).tsx?pick=default&pick=$css": {
-    "file": "assets/(routines)-BIqJjOZy.js",
+    "file": "assets/(routines)-Dcao7mhu.js",
     "name": "(routines)",
     "src": "src/routes/(routines).tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_routing-B-zMlmLc.js",
-      "_Time-L_30tfk-.js",
-      "_index.browser-DRoZXl1w.js"
+      "_routing-DUaLRc8k.js",
+      "_Time-Cvku3uHE.js",
+      "_index.browser-Cei-BBeL.js"
     ]
   },
   "src/routes/[id]/edit.tsx?pick=default&pick=$css": {
-    "file": "assets/edit-DsHWEZ_C.js",
+    "file": "assets/edit-2NSz8Y-S.js",
     "name": "edit",
     "src": "src/routes/[id]/edit.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_routing-B-zMlmLc.js",
-      "_Time-L_30tfk-.js",
-      "_index.browser-DRoZXl1w.js"
+      "_routing-DUaLRc8k.js",
+      "_Time-Cvku3uHE.js",
+      "_index.browser-Cei-BBeL.js"
     ]
   },
   "src/routes/[id]/play.tsx?pick=default&pick=$css": {
-    "file": "assets/play-DyRcF2be.js",
+    "file": "assets/play-Cq2iRsKg.js",
     "name": "play",
     "src": "src/routes/[id]/play.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_routing-B-zMlmLc.js",
-      "_Time-L_30tfk-.js"
+      "_routing-DUaLRc8k.js",
+      "_Time-Cvku3uHE.js"
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BS3vZsx-.js",
+    "file": "assets/client-C2ogpLvD.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "imports": [
-      "_routing-B-zMlmLc.js"
+      "_routing-DUaLRc8k.js"
     ],
     "dynamicImports": [
       "src/routes/(routines).tsx?pick=default&pick=$css",
@@ -67,7 +67,7 @@
       "src/routes/[id]/play.tsx?pick=default&pick=$css"
     ],
     "css": [
-      "assets/client-1oLm3Cfh.css"
+      "assets/client-BvweHtiQ.css"
     ]
   }
 }
