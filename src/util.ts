@@ -37,5 +37,5 @@ export function storeRoutines(routines: Routine[]) {
 }
 
 export function asset(file: string) {
-  return `${import.meta.env.SERVER_BASE_URL}${file}`;
+  return `${import.meta.env.SERVER_BASE_URL}/${file}`;
 }
