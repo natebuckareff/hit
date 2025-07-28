@@ -19,7 +19,7 @@
     "name": "routing"
   },
   "src/routes/(routines).tsx?pick=default&pick=$css": {
-    "file": "assets/(routines)-B94wMKpL.js",
+    "file": "assets/(routines)-DhfR7Yfk.js",
     "name": "(routines)",
     "src": "src/routes/(routines).tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -54,7 +54,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BrQSQmNy.js",
+    "file": "assets/client-C498p_y9.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
