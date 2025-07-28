@@ -13,6 +13,7 @@
     "@solidjs/start": "^1.1.0",
     "@thisbeyond/solid-dnd": "^0.7.5",
     "nanoid": "^5.1.5",
+    "posthog-js": "^1.258.2",
     "solid-js": "^1.9.5",
     "vinxi": "^0.5.7"
   },
