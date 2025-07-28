@@ -43,12 +43,16 @@ export function Layout(props: { title?: string; children: JSX.Element }) {
             Repository
           </a>
 
-          <a
-            class="underline hover:text-black"
-            href={`https://github.com/natebuckareff/hit/commit/${import.meta.env.VITE_COMMIT_HASH}`}
-          >
-            {import.meta.env.VITE_COMMIT_HASH.slice(0, 7)}
-          </a>
+          <Show when={import.meta.env.VITE_COMMIT_HASH}>
+            {commitHash => (
+              <a
+                class="underline hover:text-black"
+                href={`https://github.com/natebuckareff/hit/commit/${commitHash()}`}
+              >
+                {commitHash().slice(0, 7)}
+              </a>
+            )}
+          </Show>
         </div>
       </footer>
     </div>
