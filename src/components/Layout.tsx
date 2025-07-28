@@ -13,17 +13,17 @@ export function Layout(props: { title?: string; children: JSX.Element }) {
   };
 
   return (
-    <div class="mx-auto max-w-xl py-8">
-      <div class="mb-4">
-        <Show when={pathname() !== import.meta.env.SERVER_BASE_URL}>
+    <div class="mx-auto flex h-full max-w-xl flex-col pt-8">
+      <Show when={pathname() !== import.meta.env.SERVER_BASE_URL}>
+        <div class="mb-4">
           <button
             class="cursor-pointer opacity-50 hover:underline hover:opacity-100"
             onClick={handleBack}
           >
             {'<-'} Back
           </button>
-        </Show>
-      </div>
+        </div>
+      </Show>
 
       <Show when={props.title}>
         {title => (
@@ -33,6 +33,24 @@ export function Layout(props: { title?: string; children: JSX.Element }) {
         )}
       </Show>
       {props.children}
+
+      <footer class="mt-auto pt-16 text-xs text-gray-400">
+        <div class="flex flex-row justify-between py-6">
+          <a
+            class="underline hover:text-black"
+            href="https://github.com/natebuckareff/hit"
+          >
+            Repository
+          </a>
+
+          <a
+            class="underline hover:text-black"
+            href={`https://github.com/natebuckareff/hit/commit/${import.meta.env.VITE_COMMIT_HASH}`}
+          >
+            {import.meta.env.VITE_COMMIT_HASH.slice(0, 7)}
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
