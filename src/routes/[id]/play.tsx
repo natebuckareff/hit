@@ -1,5 +1,7 @@
+import { useKeyDownEvent } from '@solid-primitives/keyboard';
 import { useParams } from '@solidjs/router';
 import {
+  createEffect,
   createSignal,
   For,
   JSX,
@@ -152,6 +154,13 @@ export default function PlayRoutine() {
     }));
   };
 
+  const handleToggle = () => {
+    setState(state => ({
+      ...state,
+      playing: !state.playing,
+    }));
+  };
+
   onMount(() => {
     setRoutines(loadRoutines());
     setLoading(false);
@@ -161,6 +170,16 @@ export default function PlayRoutine() {
     }, 1_000);
 
     return () => clearInterval(interval);
+  });
+
+  const event = useKeyDownEvent();
+
+  createEffect(() => {
+    const e = event();
+    if (e?.code === 'Space') {
+      handleToggle();
+      e.preventDefault();
+    }
   });
 
   return (
